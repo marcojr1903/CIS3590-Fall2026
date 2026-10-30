@@ -20,7 +20,7 @@ def pantherID(id, fName):
 def search():
     keyword = request.args.get('keyword', default = None)
     limit = request.args.get('limit', default = 5, type = int)
-    return f"<h2>Search results for {keyword}, limit {limit}.<h2>"
+    return f"<h2>Search results for {keyword}, limit {limit}.</h2>"
     # try http://127.0.0.1:5050/search?keyword=python&limit=3
 
 
