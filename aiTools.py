@@ -21,5 +21,4 @@ from mellea import generative
 @generative
 def write_haiku(topic: str) -> str:
     """Write a haiku about the given topic."""
-
 print(write_haiku(m, topic="Python"))

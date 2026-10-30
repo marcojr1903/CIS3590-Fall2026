@@ -48,21 +48,16 @@ prompt = st.chat_input("Ask me about AI...")
 
 if prompt:
     with st.chat_message("user"):
-        st.markdown(prompt) # displaying the question the user
-        # asked in chat interface (st.chat_input)
+        st.markdown(prompt)
 
     st.session_state.messages.append({
         "role": "user",
         "content": prompt
     })
-    # messages is a list of dictionaries, each
-    # dictionary contains the role (user or assistant)
-    # and the content of the message
 
     with st.chat_message("assistant"):
 
-        with st.spinner("Thinking..."): # inform user that
-            # answer is being generated
+        with st.spinner("Thinking..."):
 
             response = m.instruct(
                 f"""

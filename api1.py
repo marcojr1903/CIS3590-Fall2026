@@ -9,9 +9,9 @@ dates = []
 for i in response:
     dates.append(i["date"])
 
-print(dates)
+print (dates)
 
 print(response[0].keys())
 
 for picture in response:
-    print(picture["date"], picture["title"], picture["hdurl"])
+    print(picture["date"], picture["title"], picture["basic_html"])
